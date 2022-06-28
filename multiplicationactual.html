@@ -1,0 +1,412 @@
+<!DOCTYPE html><html><head><title></title><link rel="shortcut icon" href="/favicon.ico" /><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><meta name="viewport" content="width=1000" /><meta name="description" content="" /><meta name="generator" content="EverWeb 2.0.2 (1661)" /><meta name="buildDate" content="Tuesday, December 6, 2016" /><meta property="og:url" content="http://lyndenmath.org/multiplicationactual.html" /><meta property="og:type" content="website" /> <link rel="stylesheet" type="text/css" href="ew_css/textstyles.css" /><script type="text/javascript" src="ew_js/imageCode.js"></script><link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Exo:400,700,500"><style type="text/css">a img {border:0px;}body {background-color: #FEFFFF;margin: 0px auto;}div.container {margin: 0px auto;width: 1000px;height: 855px;}.shape_0 {background-color:#9C6F15;}#navmenu_menu0 {clear:both;float:left;margin:0;padding:0;width:100%;font-family:'Exo-Medium','Exo','Helvetica';font-size:16px;z-index:1000;position:relative;}#navmenu_menu0 ul {margin:0;padding:0;list-style:none;position:relative;}#navmenu_menu0 ul li {margin:0 30px 0 0;padding:0;float:left;position:relative;}#navmenu_menu0 ul li a {display:block;margin:0;padding:0px;height: 21px;line-height: 21px;text-decoration:none;color:#FEFFFF;font-weight: 500;text-align: left;}#navmenu_menu0 ul li a:visited {text-decoration:none;color:#FEFFFF;}#navmenu_menu0 ul li a:hover {text-decoration:underline;color:#FEFFFF;}#navmenu_menu0 ul li:hover a,#navmenu_menu0 ul li.hover a {text-decoration:underline;color:#FEFFFF;}#navmenu_menu0 ul ul {z-index:11002;display:none;position:absolute;left:0;float:left;right:auto;padding-top:2px;}#navmenu_menu0 ul ul li {left:auto;margin:0;clear:left;float:left;width:100%;}#navmenu_menu0 ul ul li a,#navmenu_menu0 ul li.active li a,#navmenu_menu0 ul li:hover ul li a,#navmenu_menu0 ul li.hover ul li a {background:#CBCBCB;text-decoration:none;color:#FEFFFF;padding-top:0px;padding-bottom:0px;border-bottom:1px solid #000000;float:left;width:100%;text-align: left;white-space:nowrap;}#navmenu_menu0 ul ul li a:hover,#navmenu_menu0 ul li.active ul li a:hover,#navmenu_menu0 ul li:hover ul li a:hover,#navmenu_menu0 ul li.hover ul li a:hover {background:#CBCBCB;text-decoration:underline;color:#FEFFFF;float:left;}#navmenu_menu0 ul li.last ul {left:auto; right:0;}#navmenu_menu0 ul li.last ul li {float:right;position:relative;right:0px;}#navmenu_menu0 ul li:hover ul,#navmenu_menu0 ul li.hover ul {display:block;}</style><style type="text/css">
+        /* reset styles */
+            html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+                padding: 0;
+                margin: 0;
+                font-size: 100%;
+                font-weight: normal;
+            }
+            /* end reset styles */
+            html {background-color:#fff;}
+            body {
+                background-color: #fff;
+                border: 3px solid #85a110;
+                width: 700px;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 15px;
+                height: 500px;
+            }
+            h1 {
+                font-size: 44px;
+                font-family: "Times New Roman", Times, serif;
+                letter-spacing: 1px;
+                color: #85a110;
+                text-align: center;
+                background-color: #e2ebb4;
+                padding:5px 15px 2px 15px;
+                margin: 0 -15px 20px -15px;
+            }
+            #quizcom /* for properties common to the quiz */{ 
+                font-size: 64px;
+                font-family: "Arial Narrow",Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            #probval1, #probval2, #probx {
+                color: green;
+                width: 1em;
+                height: 1.2em;
+                background-color: lightyellow;
+                float: left;
+            }
+            #probedge {
+                color: white;
+                width: 250px;
+                height: 1.2em;
+                float: left;
+            }
+            #answerval1, #answerval2, #answerval3, #answerval4 {
+                color: #f96b18;
+                margin: 10px;
+                border: 2px dotted #fc6512;
+                padding: 0 15px 0 15px;
+                background-color: lightyellow;
+                float: left;
+                width: 1.5em;
+            }
+            #answeredge {
+                color: white;
+                width: 42px;
+                float: left;
+            }
+            #blankblock /* to add a blank block */{
+                font-size: 28px;
+                color: white;
+                width:650px;
+                height: 30px;
+                float:right;
+            }
+            #resptext {
+                font-size: 18px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: green;
+                text-align: left;
+                width: 700px;
+                float:right;
+            }
+            #starter {
+                font-size: 28px;
+                float: right;
+            }
+            #timer {
+                font-size: 24px;
+                font-family: Courier, monospace;
+                color:white; /* make black to be visible */
+                float: right;
+                height: 30px;
+                width:30px;
+            }
+            #progblock1, #progblock2, #progblock3, #progblock4, #progblock5, #progblock6, #progblock7, #progblock8, #progblock9, #progblock10 /* to add a blank block */{
+                font-size: 18px;
+                background-color: #e2ebb4;
+                color: white;
+                width: 65px;
+                height: 1em;
+                border: 1px solid black;
+                float:left;
+            }
+            #bar {
+                text-align: center;
+            }
+            #username {
+                font-size: 28px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: green;
+                float: left;
+            }
+            
+            #userkey {
+                font-size: 28px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: green;
+                float: left;
+                
+            }
+            #ulabel {
+                font-size: 28px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #85a110;
+                float: left;
+                width: 3.5em;
+            }
+            #pkey { /*not sure this does anything */
+                font-size: 28px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: green;
+                float: left;
+
+            }
+            #plabel {
+                font-size: 28px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #85a110;
+                float: left;
+                width: 3em;
+                text-align: center;
+            }
+            
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+        <!--<script src="_js/jquery-1.6.3.min.js"></script> -->
+        <script>
+            $(document).ready(function(){
+        
+                /* set some initial values */
+                
+                $("#username").removeAttr("disabled"); //makes sure name and key fields are enabled on reload
+                $("#userkey").removeAttr("disabled");
+                
+                $('form :input').val(""); //clears name and key fields on page load or reload 
+                var running = false; //timer is not yet running
+                
+                var seed = Math.floor(Math.random()*9000)+1000; //set the seed value
+                var mkey = (seed*777) % 500; //determine key
+                
+                //seed=0; //disable for actual test
+                
+                $('h1').text("Multiplication Test - " + seed); //show the seed value
+                
+                /* this function randomly fills the values of the arrays */
+                
+                function fillVals() {
+                var r1=Math.floor(Math.random()*6)+2;
+                var r2=Math.floor(Math.random()*7)+4;
+                var rchoice=Math.floor(Math.random()*4);
+                var a1 = [r1,r1+1,r1+2,r1+3];
+                var a2 = [r2, r2-2, r2, r2-2];
+                var a3 = [a1[0]*a2[0],a1[1]*a2[1],a1[2]*a2[2],a1[3]*a2[3]];
+                if (a3[0]==a3[1]) {
+                    a2[1]=a2[1]+1;
+                    a3[1]=a1[1]*a2[1];
+                }
+                if (a3[2]==a3[3]) {
+                    a2[3]=a2[3]+1;
+                    a3[3]=a1[3]*a2[3];
+                }
+                var multval = a3[rchoice];
+                $('#probval1').text(a1[rchoice]);
+                $('#probval2').text(a2[rchoice]);
+                
+                a3.sort(function() {return 0.5 - Math.random()});
+                
+                $('#answerval1').text(a3[0]);
+                $('#answerval2').text(a3[1]);
+                $('#answerval3').text(a3[2]);
+                $('#answerval4').text(a3[3]);
+                return multval;
+                }
+                
+                //other initial conditions set
+
+                var scoreright = 0;
+                var scorewrong = 0;
+                
+                var maxtime = 40; //how long the test is for (40 seconds)
+                $('#timer').text(maxtime);
+                
+                $('#starter').click(function(){  //the start button is clicked here
+                    
+                    //name and key are validated and locked or alert given
+                    //enable this section on actual test
+                    
+
+                    if ($('#username').val()=='') {
+                        alert('You must enter a name');
+                        return false
+                    }
+                    if ($('#userkey').val()=='') {
+                        alert('You must enter a key');
+                        return false
+                    }
+                    if ($('#userkey').val()!= mkey) {
+                        alert('You must enter valid key');
+                        return false
+                    }      
+                    $('#username').attr('disabled','disabled'); 
+                    $('#userkey').attr('disabled','disabled'); 
+
+                    
+                    //initial values are filled in and timer started
+                    
+                    fillVals();
+                    running = true; //flag to verify that the quiz has begun
+                    $('#starter').fadeToggle(700); //start button disappears
+
+                    var start = new Date;
+                   
+                    setInterval(function() {
+                        var et = Math.round(((start - new Date)/1000) + maxtime);
+
+                        //this section is for displaying the progess bar
+                        
+                        if (et > 0) {
+                            $('#timer').text(et);
+                            if (et <= 36) {
+                                $('#progblock1').css('background-color', '#f96b18');
+                            }
+                            if (et <= 32) {
+                                $('#progblock2').css('background-color','#f96b18');
+                            }
+                            if (et <= 28) {
+                                $('#progblock3').css('background-color','#f96b18');
+                            }
+                            if (et <= 24) {
+                                $('#progblock4').css('background-color','#f96b18');
+                            }
+                            if (et <= 20) {
+                                $('#progblock5').css('background-color','#f96b18');
+                            }
+                            if (et <= 16) {
+                                $('#progblock6').css('background-color','#f96b18');
+                            }
+                            if (et <= 12) {
+                                $('#progblock7').css('background-color','#f96b18');
+                            }
+                            if (et <= 8) {
+                                $('#progblock8').css('background-color','#f96b18');
+                            }
+                            if (et <= 4) {
+                                $('#progblock9').css('background-color','#f96b18');
+                            }
+
+                        //this section is for showing info at the end
+                        } else if (et==0) {
+                            $('#progblock10').css('background-color','#f96b18');
+                            $('#resptext').prepend('Correct:' + scoreright + '   Wrong:' + scorewrong + '   Missed: ');
+                            $('#timer').text(0);
+                            
+                        } else {
+                            $('#timer').text(0);
+                        }
+                    },1000);
+                });  //end of start click process
+                     
+                
+                /*this section checks answers and refills new questions while timer still running */
+
+
+                $('#answerval1').click(function(){
+
+                    var ansval1=$('#answerval1').text();
+                    var ansval2=$('#answerval2').text();
+                    var ansval3=$('#answerval3').text();
+                    var ansval4=$('#answerval4').text();
+                    var pbval1=$('#probval1').text();
+                    var pbval2=$('#probval2').text();
+                    var corans = pbval1*pbval2;
+
+                    if ($('#timer').text()>0 && running==true) {
+                        if (ansval1 == corans) {
+                            scoreright++;
+                        } else {
+                            $('#resptext').append('  ' + pbval1 + 'x' + pbval2);
+                            scorewrong++;
+                        }
+                        fillVals();
+                    }
+                });
+
+                $('#answerval2').click(function(){
+
+                    var ansval1=$('#answerval1').text();
+                    var ansval2=$('#answerval2').text();
+                    var ansval3=$('#answerval3').text();
+                    var ansval4=$('#answerval4').text();
+                    var pbval1=$('#probval1').text();
+                    var pbval2=$('#probval2').text();
+                    var corans = pbval1*pbval2;
+
+                    if ($('#timer').text()>0 && running==true) {
+                        if (ansval2 == corans) {
+                            scoreright++;
+                        } else {
+                            $('#resptext').append('  ' + pbval1 + 'x' + pbval2);
+                            scorewrong++;
+                        }
+                        fillVals();
+                    }
+                });
+
+                $('#answerval3').click(function(){
+
+                    var ansval1=$('#answerval1').text();
+                    var ansval2=$('#answerval2').text();
+                    var ansval3=$('#answerval3').text();
+                    var ansval4=$('#answerval4').text();
+                    var pbval1=$('#probval1').text();
+                    var pbval2=$('#probval2').text();
+                    var corans = pbval1*pbval2;
+
+                    if ($('#timer').text()>0 && running==true) {
+                        if (ansval3 == corans) {
+                            scoreright++;
+                        } else {
+                            $('#resptext').append('  ' + pbval1 + 'x' + pbval2);
+                            scorewrong++;
+                        }
+                        fillVals();
+                    }
+                });
+
+                $('#answerval4').click(function(){
+
+                    var ansval1=$('#answerval1').text();
+                    var ansval2=$('#answerval2').text();
+                    var ansval3=$('#answerval3').text();
+                    var ansval4=$('#answerval4').text();
+                    var pbval1=$('#probval1').text();
+                    var pbval2=$('#probval2').text();
+                    var corans = pbval1*pbval2;
+
+                    if ($('#timer').text()>0 && running==true) {
+                        if (ansval4 == corans) {
+                            scoreright++;
+                        } else {
+                            $('#resptext').append('  ' + pbval1 + 'x' + pbval2);
+                            scorewrong++;
+                        }
+                        fillVals();
+                    }
+                });
+
+
+                /* this sections takes care of ending processes */
+
+
+            });//end ready
+</script></head><body><div class="shadow"><div class="container" style="height:855px"><header><div class="shape_0" style="left:0;top:0px;width:100%;min-width:1000px;height:125px;z-index:0;position:absolute;"></div><div style="position:relative"><div class="shape_1" style="left:50px;top:27px;width:344px;height:74px;z-index:1;position:absolute;"><div style="margin: 4.32px 2.16px 4.32px 2.16px; "><p style="line-height:56px;margin-top:0px;margin-bottom:11.25px;" class="Style1">lyndenmath.org</p></div></div></div><div style="position:relative"><div class="ewnavmenu" id="navmenu_menu0" style="left:394px;top:56px;height:42px;width:543px;z-index:10002;position: absolute;"><ul><li><a class="main item0" href="index.html">HOME</a></li><li><a class="main item1" href="algebralab.html">ALGEBRALAB</a></li><li><a class="main item2" href="computer-sci.html">COMPUTER SCI</a></li><li><a class="main item3" href="pre-calculus.html">PRE-CALC</a></li><li  style='margin-right:0px;' class="last"><a class="main item4" href="Bridge.html">BRIDGE</a></li></ul></div></div></header><div class="content" data-minheight="400"><div style="position:relative"><div style="left:4px;top:126px;height:629px;width:700px;position: absolute;z-index: 3;"><h1>x</h1>
+        <form>
+            <div>
+                <label for="ulabel" id="ulabel">Name:</label>
+                <input name="username" type="text" ID="username" size="12" value="">
+                <label for="pkey" id="plabel">Key:</label>
+                <input name="userkey" type="text" ID="userkey" size="6">
+            </div>
+        </form>
+        <input type="button" name="Submit" id="starter" value="START" />
+        
+        <p ID="blankblock">_</p>
+        
+        <div ID="bar">
+            <p ID="progblock1">- -</p>
+            <p ID="progblock2">- -</p>
+            <p ID="progblock3">- -</p>
+            <p ID="progblock4">- -</p>
+            <p ID="progblock5">- -</p>
+            <p ID="progblock6">- -</p>
+            <p ID="progblock7">- -</p>
+            <p ID="progblock8">- -</p>
+            <p ID="progblock9">- -</p>
+            <p ID="progblock10">- -</p>
+        </div>
+
+        <p ID="timer">_</p>
+        
+        <p ID="blankblock">_</p>
+        
+        <div ID="quizcom">
+            <p ID="probedge">_</p>
+            <p ID="probval1">0</p>
+            <p ID="probx">X</p>
+            <p ID="probval2">0</p>
+            <p ID="probedge">_</p>
+            <p ID="answeredge">_</p>
+            <p ID="answerval1">0</p>
+            <p ID="answerval2">0</p>
+            <p ID="answerval3">0</p>
+            <p ID="answerval4">0</p>
+            <p ID="answeredge">_</p>            
+        </div>
+        <p ID="blankblock">_</p>
+        <p ID="resptext"></p></div></div></div><footer data-top='755' data-height='100'></footer></div></div></body></html>

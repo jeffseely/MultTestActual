@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Heading Stuff: <a href=multiplicationactual.html>ma</a></h1>
+  <svg width="720" height="480">
+    <rect x="5" y="10" width="700" height="460" fill="white" stroke-width="5" stroke="gray" />
+
+    <g onmousedown="cl1()" cursor="pointer">
+      <rect id="r1" x="25" y="300" width="150" height="100" fill="green" />
+      <text id="tx1" x="100" y="370" text-anchor="middle"
+        style="fill:white; font-size:80px; font-family:Courier">0</text>
+    </g>
+    <g onmousedown="cl2()" cursor="pointer">
+      <rect id="r2" x="195" y="300" width="150" height="100" fill="green" />
+      <text id="tx2" x="270" y="370" text-anchor="middle"
+        style="fill:white; font-size:80px; font-family:Courier">0</text>
+    </g>
+    <g onmousedown="cl3()" cursor="pointer">
+      <rect id="r3" x="365" y="300" width="150" height="100" fill="green" />
+      <text id="tx3" x="440" y="370" text-anchor="middle"
+        style="fill:white; font-size:80px; font-family:Courier">0</text>
+    </g>
+    <g onmousedown="cl4()" cursor="pointer">
+      <rect id="r4" x="535" y="300" width="150" height="100" fill="green" />
+      <text id="tx4" x="610" y="370" text-anchor="middle"
+        style="fill:white; font-size:80px; font-family:Courier">0</text>
+    </g>
+
+    <rect id="qr" x="195" y="180" width="320" height="100" fill="red" />
+      
+    <g onmousedown="toggle()" cursor="pointer">
+      <rect id="start" x="560" y="110" rx="10" ry="10" width="100" height="50" fill="green" />
+      <text id="ssb" x="610" y="145" text-anchor="middle"
+        style="fill:white; font-size:30px; font-family:Courier">START</text>
+    </g>
+  </svg>
+
+  <script>
+    let level = 0;
+    let tog = "start";
+    let t1 = document.getElementById("tx1");
+    let t2 = document.getElementById("tx2");
+    let t3 = document.getElementById("tx3");
+    let t4 = document.getElementById("tx4");
+    let btnc = document.getElementById("start");
+    let btntx = document.getElementById("ssb");
+
+    function cl1() {
+      level = level + 1;
+      t1.innerHTML = level;
+    }
+
+    function cl2() {
+      level = level + 1;
+      t2.innerHTML = level;
+    }
+
+    function cl3() {
+      level = level + 1;
+      t3.innerHTML = level;
+    }
+
+    function cl4() {
+      level = level + 1;
+      t4.innerHTML = level;
+    }
+
+    function toggle() {
+      if (tog=="start"){
+        tog="stop";
+        btnc.style.fill="red";
+      } else {
+        tog="start";
+        btnc.style.fill="green";
+      }
+      btntx.innerHTML=tog;
+    }
+
+  </script>
+</body>
+
+</html>
